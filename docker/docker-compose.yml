@@ -4,5 +4,7 @@ services:
   workstation-4:
     image: registry.training.local/workstation-4:${IMAGE_VERSION}
     network_mode: bridge
+    environment:
+      - "SERVICE_NAME=workstation-4"
     ports:
       - "4567"
